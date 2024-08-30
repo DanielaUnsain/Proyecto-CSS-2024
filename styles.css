@@ -1,0 +1,116 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #fafafa;
+    color: #333;
+}
+
+
+header {
+    background-color: #e40aa3;
+    color: black;
+    padding: 10px 0;
+    font-family: Georgia;
+    text-align: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+section {
+    padding: 40px 20px;
+    margin: 20px 0;
+    background-color: rgb(221, 90, 171);
+    border-radius: 10px;
+}
+
+#servicios .servicios-container {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    gap: 20px;
+}
+
+#servicios .servicio {
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.grid-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.grid-gallery img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form input, form textarea {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px;
+    background-color: #880e74;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0e0d0d;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+}
+
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    #servicios .servicios-container {
+        flex-direction: column;
+    }
+
+    .grid-gallery {
+        grid-template-columns: 1fr;
+    }
+}
